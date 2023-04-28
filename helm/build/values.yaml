@@ -1,0 +1,15 @@
+app:
+  name: poi-map-app
+  namespace: alexgroom
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/alexgroom-frontend
+  org: Summit23DevRHEL
+  name: alexgroom-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: alexgroom/poi-map-app
+  tag: latest
